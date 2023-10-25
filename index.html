@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/format.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#Main">Inicio</a>
+            </li>
+            <li>
+                <a href="#Skills">Skills</a>
+            </li>
+            <li>
+                <a href="#Proyectos">Proyectos</a>
+            </li>
+            <li>
+                <a href="#Contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="Main">
+        <div class="imagenPerfil">
+            <img src="src/Perfil.png" alt="imagenPerfil">
+        </div>
+        <section class="info">
+            <h1>Carles Sánchez</h1>
+            <h2>Programador FULL-STACK</h2>
+            <p>Apasionada por el diseño y la programación. Disfruto enormemente del proceso creativo, 
+                la lógica y el desafío que ambos ofrecen.
+                Siempre en busca de oportunidades para aprender cosas nuevas.
+            </p>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/carlessancheznero/" target="_blank"><img src="src/LinkedIn.png" alt="Linkedin"></a>
+                <a href="mailto:carlessanchez.vae@gmail.com" target="_blank"><img src="src/Gmail Logo.png" alt="Gmail"></a>
+                <a href="https://twitter.com/Ner0craf7" target="_blank"><img src="src/TwitterX.png" alt="TwitterX"></a>
+            </div>
+        </section>
+    </main>
+    <section id="Skills">
+        <div class="skills">
+            <img src="src/Html 5.png" alt="HTML">
+            <img src="src/CSS3.png" alt="CSS">
+            <img src="src/JavaScript.png" alt="JavaScript">
+            <img src="src/Java.png" alt="Java">
+        </div>
+    </section>
+    <section id="Proyectos">
+        <div class="item1">
+            <img src="src/Rectangle 13.png" alt="Project 1">
+        </div>
+        <div class="item2">
+            <img src="src/Rectangle 14.png" alt="Project 2">
+        </div>
+        <div class="item3">
+            <img src="src/Rectangle 15.png" alt="Project 3">
+        </div>
+        <div class="item4">
+            <img src="src/Rectangle 16.png" alt="Project 4">
+        </div>
+        <div class="item5">
+            <img src="src/Rectangle 17.png" alt="Project 5">
+        </div>
+    </section>
+    <section id="Contacto">
+        <form action="procesar_formulario.php" method="post">
+            
+            <input type="text" id="usuario" name="usuario" required placeholder="Usuario"><br><br>
+    
+            
+            <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+    
+            
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu mensaje"></textarea>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <h3>Carles Sánchez Moreno - 2023</h3>
+    </footer>
+</body>
+</html>
+
