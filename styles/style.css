@@ -19,6 +19,11 @@
     text-decoration: none;
 }
 
+#topMain{
+    width: 100%;
+    height: 1px;
+}
+
 body{
     background:  linear-gradient(var(--bg-100), var(--bg-200), black) ;
 }
