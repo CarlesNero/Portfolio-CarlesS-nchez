@@ -192,9 +192,9 @@ footer h3{
 
 @media (max-width: 1130px) {
     
-    nav{
+  /*   nav{
         position: relative;
-    }
+    } */
 
     nav a{
         font-size: 12px;
