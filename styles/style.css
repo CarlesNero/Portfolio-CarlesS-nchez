@@ -59,14 +59,11 @@ nav li{
 nav li:hover, nav li:active{
     transform: rotateZ(360deg);
     scale: 1.5;
-    
-    
 }
 
 
 nav a:hover{
     color: var(--primary-100);
-    transform: rotate(90deg)3s;
 }
 
 #Main{
