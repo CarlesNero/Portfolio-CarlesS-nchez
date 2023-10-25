@@ -159,6 +159,7 @@ nav a:hover{
     }
 
     .info{
+        align-items: center;
         text-align: justify;
         margin-left: 0rem;
     }
