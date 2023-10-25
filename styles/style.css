@@ -74,7 +74,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: -40px;
 }
 
 .info h1{
@@ -127,8 +126,9 @@ nav a:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
     place-items: center;
-    margin: 5rem 20rem;
+    margin: 5rem auto;
     padding: 0;
+    width: 1000px;
 }
 
 .item1{
@@ -140,8 +140,31 @@ nav a:hover{
 
 
 @media (max-width: 1130px) {
+    #Main{
+        margin: 200px 0 0 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .redes{
+   justify-content: space-evenly;
+   margin-left: -2rem;
+}
+
+    .info p{
+        width: 400px;
+        
+    }
+
+    .info{
+        
+        margin-left: 0rem;
+    }
+    
     .imagenPerfil{
-        margin-top: 3rem;
+        margin: 3rem 0 0;
         min-width: 500px;
         max-width: 700px;
 
@@ -151,6 +174,8 @@ nav a:hover{
     }
 
     #Proyectos{
+        width: auto;
         margin: 2rem 2rem;
     }
+  
 }
