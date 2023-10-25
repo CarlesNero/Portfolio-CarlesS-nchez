@@ -140,8 +140,14 @@ nav a:hover{
     width: 100%
 }
 
+#Proyectos div img{
+    width: 200em;
+}
+
+
 .item1{
     grid-row: 1 / 3;
+    
 }
 
 
