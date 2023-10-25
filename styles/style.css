@@ -26,10 +26,11 @@
 
 body{
     background:  linear-gradient(var(--bg-100), var(--bg-200), black) ;
+    padding: 0 20%;
 }
 
 nav{
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 0; 
     left: 0; 
@@ -63,7 +64,6 @@ nav a:hover{
 }
 
 #Main{
-    margin: 200px 200px 0 200px;
     display: flex;
     justify-content: center;
     
@@ -71,14 +71,14 @@ nav a:hover{
 
 .imagenPerfil{
     
-    max-width: 703px;
+    margin-left: 1rem;
     
 }
 
 .info{
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 .info h1{
@@ -109,16 +109,20 @@ nav a:hover{
     scale: 1.1;
 }
 
+#Skills{
+    width: auto;
+    position: relative;
+}
+
 .skills{
     width: 100%;
+    position: relative;
     height: 100px;
     background-color: var(--accent-100);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    padding: 0 20rem;
+    border: 5px solid black;
 }
 
 .skills img{
@@ -131,9 +135,9 @@ nav a:hover{
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
     place-items: center;
-    margin: 5rem auto;
+    margin: 5rem 0;
     padding: 0;
-    width: 1000px;
+    width: 100%
 }
 
 .item1{
@@ -141,12 +145,57 @@ nav a:hover{
 }
 
 
+#Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+}
+#Contacto form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    
+}
+#Contacto input, textarea{
+    color: var(--bg-100);
+    font-weight: 700;
+    min-width: 100%;
+    padding: .5rem 2rem;
+    border: 5px solid black;
+    resize: none;
+}
 
+.boton{
+    background: var(--accent-100);
+}
+
+footer h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
 
 
 @media (max-width: 1130px) {
+    
+    nav{
+        position: relative;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+
+    body{
+        padding: 0 10%;
+    }
+    
     #Main{
-        margin: 200px 0 0 0;
+        margin: 0 ;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -158,30 +207,55 @@ nav a:hover{
    
 }
 
-    .info p{
-        width: 400px;
-        
-    }
 
     .info{
-        align-items: center;
         text-align: justify;
         margin-left: 0rem;
+    }
+
+    .info h1{
+        font-size: 2.2rem;
+    }
+
+    .info h2{
+        font-size: 1.3rem;
     }
     
     .imagenPerfil{
         margin: 3rem 0 0;
-        min-width: 500px;
-        max-width: 700px;
+
 
     }
-    .skills{
-        padding: 0;
+    .skills img{
+        width: 2rem;
+        height: 2rem;
     }
 
     #Proyectos{
-        width: auto;
-        margin: 2rem 2rem;
+        width: 100%;
     }
   
+}
+
+@media (min-width: 760px) {
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    nav{
+        position: sticky;
+    }
+
+    .info h1{
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+
+    .info h2{
+        font-size: 2.5rem;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+    }
 }
