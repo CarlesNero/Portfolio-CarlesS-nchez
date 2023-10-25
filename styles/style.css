@@ -183,6 +183,7 @@ nav a:hover{
 
 .boton{
     background: var(--accent-100);
+    cursor: pointer;
 }
 
 footer h3{
