@@ -192,10 +192,16 @@ footer h3{
 
 @media (max-width: 1130px) {
     
-  /*   nav{
-        position: relative;
-    } */
-
+ 
+    #Proyectos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        place-items: center;
+        margin: 5rem 0;
+        padding: 0;
+        width: 100%
+    }
     nav a{
         font-size: 12px;
     }
